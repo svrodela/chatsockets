@@ -9,16 +9,17 @@
 </head>
 <body>
     <div class="container">
-        <form action="/">
+        <form action="/enviar" method="post">
             <br>
             <div class="form-floating">
-                <textarea disabled class="form-control" placeholder="Chat" id="floatingTextarea2" style="height: 100px" ></textarea>
-                <label for="floatingTextarea2">Mensajes</label>
+                <textarea disabled class="form-control" placeholder=""  id="floatingTextarea2" style="height: 400px"  ></textarea>
+                <label for="floatingTextarea2"></label>
               </div>
 
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Mensaje" aria-label="Mensaje" aria-describedby="button-addon2">
-                <button class="btn btn-primary" type="button" id="button-addon2">Enviar</button>
+                <input type="hidden" id="usuario" name="usuario" value="Sergio">
+                <input type="text" id="mensaje" name="mensaje" class="form-control" placeholder="Mensaje" aria-label="Mensaje" aria-describedby="button-addon2">
+                <button class="btn btn-primary" >Enviar</button>
               </div>
               
         </form>
